@@ -10,7 +10,7 @@ var session = require('express-session');
 var exphbs=require('express-handlebars');
 var expressValidator=require('express-validator');
 var LocalStrategy = require('passport-local').Strategy;
-mongoose.connect('mongodb://localhost:27017/kfl');
+mongoose.connect('mongodb://mongo:27017/kfl', { useNewUrlParser: true }); // docker-compose service name
 var db=mongoose.connection;
 
 /* Routes */
