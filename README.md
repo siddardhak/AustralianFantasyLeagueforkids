@@ -5,7 +5,7 @@ Clone The repo
 ```
 
 ```
-If Docker is Installed run docker-compose up . You can access applicationa at localhost:3000
+If Docker is Installed on the system run docker-compose up . You can access applicationa at localhost:3000
 ```
 
 ```
