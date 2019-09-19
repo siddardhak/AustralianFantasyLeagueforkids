@@ -8,8 +8,8 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh '''sudo docker run mongo:latest
-'''
+        sh '''sudo docker -d run mongo:latest
+npm start'''
       }
     }
   }
