@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh '''sudo docker run mongo
+        sh '''sudo usermod --a -G docker $user
 npm start'''
       }
     }
