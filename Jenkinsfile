@@ -8,8 +8,7 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh '''sudo usermod --a -G docker $user
-npm start'''
+        sh 'whoami'
       }
     }
   }
