@@ -1,7 +1,4 @@
 pipeline {
-  environment {
-        PATH = "$PATH:/snap/bin/docker-compose"
-    }
   agent any
   stages {
     stage('Build') {
@@ -9,5 +6,8 @@ pipeline {
         sh 'which docker-compose'
       }
     }
+  }
+  environment {
+    PATH = "$PATH:/snap/bin/docker-compose"
   }
 }
