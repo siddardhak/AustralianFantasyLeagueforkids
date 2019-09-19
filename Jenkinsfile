@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'sudo docker-compose up'
+        sh '''cd AustralianFantasyLeagueforkids
+sudo docker-compose up'''
       }
     }
   }
