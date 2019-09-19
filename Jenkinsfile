@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh 'docker run siddardhakolanupaka/aflapplication:latest'
+        sh '''docker run mongo
+npm start'''
       }
     }
   }
