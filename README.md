@@ -1,7 +1,7 @@
 # AustralianFantasyLeagueforkids
 
 ```
-Clone The repo
+Clone the repo
 ```
 
 ```
