@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Run') {
       steps {
-        sh 'whoami'
+        sh '''sudo docker run mongo:latest
+'''
       }
     }
   }
