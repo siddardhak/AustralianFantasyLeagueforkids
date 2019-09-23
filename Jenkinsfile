@@ -4,7 +4,9 @@ pipeline {
     stage('Build') {
       steps {
         sh '''ls
-sudo docker-compose up'''
+npm install
+docker-compose build
+sudo rm -rf alianFantasyLeagueforkids_master'''
       }
     }
   }
