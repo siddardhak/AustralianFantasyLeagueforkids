@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''ls
-sudo docker-compose up'''
+sudo docker build -t siddardhakolanupaka/aflproject'''
       }
     }
   }
