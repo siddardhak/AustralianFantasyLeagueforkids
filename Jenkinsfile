@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''ls
 npm install
-docker-compose build
+docker build .
 sudo rm -rf alianFantasyLeagueforkids_master'''
       }
     }
